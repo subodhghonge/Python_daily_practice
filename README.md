@@ -8,6 +8,7 @@ Daily Python problem-solving and concept practice to strengthen core programming
 | Day | Topics Covered           | Status |
 |-----|--------------------------|--------|
 | 1   | Variables, Operators     | ✅     |
+| 2   | Basics of Python         | ✅     |
 
 ## 📚 Resources Used
 - W3Schools
