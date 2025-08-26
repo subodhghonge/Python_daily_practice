@@ -18,4 +18,3 @@
     #10. isdigit()/isnumeric() - returns true, if string contains only numbers,
                      returns false, if string contains any char.
     #11. isupper() / islower()
-    
