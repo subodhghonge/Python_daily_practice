@@ -25,30 +25,69 @@
 # else:
 #     print("string is not palindrome")
 
-#4. Count vowels, consonants, digits, special chars.
-def count_char(s):
-    vowels = 'aeiou'
+# #4. Count vowels, consonants, digits, special chars.
+# def count_char(s):
+#     vowels = 'aeiou'
 
-    v_c = c_c = d_c = s_c = 0
+#     v_c = c_c = d_c = s_c = 0
 
-    for i in n:
-        if i.isalpha():
-            if i in vowels:
-                v_c += 1
-            else:
-                c_c += 1
-        elif i.isdigit():
-            d_c += 1
-        else:
-            s_c += 1
+#     for i in n:
+#         if i.isalpha():
+#             if i in vowels:
+#                 v_c += 1
+#             else:
+#                 c_c += 1
+#         elif i.isdigit():
+#             d_c += 1
+#         else:
+#             s_c += 1
     
-    return v_c, c_c, d_c, s_c
+#     return v_c, c_c, d_c, s_c
 
-n = input("Enter your email Id :- ")
+# n = input("Enter your email Id :- ")
 
-v, c, d, s = count_char(n)
+# v, c, d, s = count_char(n)
 
-print("vowels count is : ", v)
-print("vowels count is : ", c)
-print("vowels count is : ", d)
-print("vowels count is : ", s)
+# print("vowels count is : ", v)
+# print("vowels count is : ", c)
+# print("vowels count is : ", d)
+# print("vowels count is : ", s)
+
+# #5.Convert string to uppercase/lowercase without using built-in.
+# def to_uppercase(s):
+#     result = ""
+#     for ch in s:
+#         if 'a' <= ch <='z':
+#             result = result + chr(ord(ch)-32)
+#         else:
+#             result += ch
+#     return result
+
+# def to_lowercase(s):
+#     result = ""
+#     for ch in s:
+#         if 'A' <= ch <= 'Z':
+#             result = result + chr(ord(ch)+32)
+#         else:
+#             result += ch
+#     return result
+
+# n = input("Enter a string : ")
+
+# print("Uppercase : ", to_uppercase(n))
+# print("Lowercase : ", to_lowercase(n))
+
+# #6. Remove whitespaces from a string.
+# def whitespace(s):
+#     result = ""
+
+#     for i in s:
+#         if i != " ":
+#             result += i
+#     return result
+
+# n = input("Enter a string : ")
+# print(whitespace(n))
+        #OR
+# n = input("Enter a string : ")
+# print('Whitespace removed string : ', "".join(n.split()))
