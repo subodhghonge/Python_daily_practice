@@ -115,3 +115,16 @@ print(freq)
 n = input('Enter a string: ')
 
 print(f'The ASCII value of {n} is {ord(n)}')
+
+#10. Find number of words in a string.
+n = input('Enter a string: ')
+count = 0
+
+a = n.split()
+
+print(len(a))
+
+#11. Swap case of a string (PyThOn → pYtHoN).
+n = input('Enter a string: ')
+
+print("Swapcase of a string is ", n.swapcase())
