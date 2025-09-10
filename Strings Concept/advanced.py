@@ -39,5 +39,6 @@
 
 # print("Expanded string:", expand_string(i))
 
-#3.
+#3.Find the longest palindrome substring (babad → bab or aba).
+
 
