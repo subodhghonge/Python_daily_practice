@@ -89,6 +89,20 @@ for i in lst_d:
     if i not in lst:
         lst.append(i)
 print(lst)
+
 #9. Find second largest element in a list.
+numbers = [12, 45, 23, 67, 34, 89, 67, 89, 23, 45]
+
+s = sorted(numbers)
+print(s)
+
+print(f"Second largest number {s[-2]}")
+    
 
 #10. Check if a list is palindrome.
+palindrome_list = [1, 2, 3, 2, 1]
+
+if palindrome_list == palindrome_list[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
