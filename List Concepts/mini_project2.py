@@ -1,4 +1,9 @@
 #Shopping Cart
+# Concepts Used: list operations (append, remove, in, loops, menus).
+
+# Problem Statement:
+
+# Create a shopping cart where user can add, remove, and view items.
 def shopping_card():
     cart = []
 
