@@ -86,3 +86,9 @@
 # Common Methods
 1. count() → count occurrences of a value.
 2. index() → returns index of first occurrence.
+
+# Tuple Operations
+Concatenation: (1,2)+(3,4) → (1,2,3,4)
+Repetition: (1,2)*3 → (1,2,1,2,1,2)
+Membership: x in tuple
+Unpacking: a,b,c = (1,2,3)
