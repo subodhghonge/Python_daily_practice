@@ -50,3 +50,6 @@
 
             4. clear() - empty the dicitonary
             eg:- dict_name.clear()
+
+# Copy Dictionary
+           - dict_name1.copy(dict_name)
