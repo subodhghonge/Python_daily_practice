@@ -31,13 +31,58 @@ lst = [1,2,3,4,5,1,2,1,1,1,3,4,5,1]
 print("Most frequent: ", most_freq(lst))
 
 #3. Implement a dictionary without using built-in dict (simulate with list of tuples).
+class MyDict:
+    def __init__(self):
+        self.data = []
+    
+    def set(self, key, value):
+        for i, (k,v) in enumerate(self.data):
+            if k == key:
+                self.data[i] = (key, value)
+                return
+        self.data.append((key, value))
+    
+    def get(self, key):
+        for k, v in self.data:
+            if k == key:
+                return v
+        return None
+    
+    def __repr__(self):
+        return str({k:v for k, v in self.data})
+
+d = MyDict()
+d.set("a", 1)
+d.set("b", 2)
+d.set("a", 3)  # update
+print("Custom Dictionary:", d)
+print("Get 'b':", d.get("b"))
+
 
 #4. Convert a list of tuples to dictionary.
 # Example: [("a",1),("b",2)] → {"a":1,"b":2}
+def tuple_dict(lst):
+    return dict(lst)
+
+pairs = [("a", 1), ("b", 2), ("c", 3)]
+print("Dictionary: ", tuple_dict(pairs))
 
 #5. Write program to count frequency of vowels in a string using dictionary.
+def v_freq(s):
+    vowels = 'aeiouAEIOU'
+    freq = {}
+
+    for i in s:
+        if i in vowels:
+            freq[i] = freq.get(i,0)+1
+    
+    return freq
+
+sentence = "Programming in Python is awesome"
+print("Vowel Frequency:", v_freq(sentence))
 
 #6. Check if two strings are isomorphic (mapping chars with dict).
+
 
 #7. Build histogram of numbers using dictionary.
 
