@@ -111,6 +111,21 @@ print(is_isomorphic("ab", "aa"))
 
 
 #7. Build histogram of numbers using dictionary.
+def build_histogram(numbers):
+    histogram = {}
+    
+    for num in numbers:
+        if num in histogram:
+            histogram[num] += 1
+        else:
+            histogram[num] = 1
+    
+    return histogram
+
+
+# 🔹 Test
+nums = [1, 2, 2, 3, 3, 3, 4, 2, 1, 5, 5, 5, 5]
+print("Histogram:", build_histogram(nums))
 
 #8. Write program to check if dictionary is subset of another.
 
