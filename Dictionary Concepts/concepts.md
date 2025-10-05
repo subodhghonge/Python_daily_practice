@@ -1,5 +1,5 @@
 # Dictionary - comma separated key-value pairs within curly({}) bracket.
-            - Unordered, key-immutable(int, str, tuple), values-mutable, duplicates are not allowed
+            - Ordered, key-immutable(int, str, tuple), values-mutable, duplicates are not allowed
             - len() used to count elements in dictionary
 
 # Dictionary syntax
